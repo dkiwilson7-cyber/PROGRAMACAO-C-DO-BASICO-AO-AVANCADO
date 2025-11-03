@@ -1,4 +1,4 @@
-/*  Faça um programa, no qual  receba e some 5 números inteiros até que a entrada seja 0.  */
+/*  Faça um programa, no qual  receba e some 5 números inteiros.  */
 
 
 
@@ -15,19 +15,13 @@ int main()
         printf("Digite um numero inteiro: \n");
         scanf("%d", &numero);
 
-        if(numero == 0)
-        {
-            printf("Fim do loop! Valor igual a zero.");
-            break;
-        }
-        else
-        {
-            soma += numero;
-        }
+        soma += numero;
     }
 
     printf("A soma dos numeros inteiros eh: %d\n", soma);
 
+
     system("pause");
     return 0;
 }
+
