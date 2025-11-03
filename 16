@@ -1,0 +1,46 @@
+/*  Faça um programa que leia 10 números e escreva o maior e o menor valor lido.  */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i = 1; //inicialização
+
+    float valor; // armazena número digitado
+
+    float menor, maior;
+
+    while (i <= 10)
+    {
+        printf("Digite o %do. numero: \n", i);
+        scanf("%f", &valor);
+
+
+        if(i == 1) // na inicialização assume dois valores
+        {
+            menor = valor;
+            maior = valor;
+        }
+        else
+        {
+            if(valor < menor)
+            {
+                menor = valor;
+            }
+            if (valor > maior)
+            {
+                maior = valor;
+            }
+        }
+        i++;
+
+    }
+
+    printf("\nMenor valor lido: %.2f\n", menor);
+    printf("\nMaior valor lido: %.2f\n", maior);
+
+    system("pause");
+    return 0;
+}
