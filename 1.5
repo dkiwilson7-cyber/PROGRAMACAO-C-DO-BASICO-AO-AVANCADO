@@ -1,0 +1,21 @@
+/*  Leia um número e imprima o resultado do quadrado deste número.  */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    int N, resultado;
+
+    printf("Digite um numero inteiro.  \n");
+    scanf("%d", &N);
+
+    resultado = pow(N,2);
+
+    printf("O quadrado do deste numero eh: %d\n", resultado);
+
+    system("pause");
+    return 0;
+}
