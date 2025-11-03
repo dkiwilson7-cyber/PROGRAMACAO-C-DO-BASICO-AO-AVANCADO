@@ -1,0 +1,20 @@
+/*  1.7 - Faça um programa que leia três valores e apresente como resultado a soma dos quadrados dos valores lidos.  */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    int n1, n2, n3, soma_quadrados;
+
+    printf("Digite tres valores: \n");
+    scanf("%d %d %d", &n1, &n2, &n3);
+
+    soma_quadrados = pow(n1,2) + pow(n2,2) + pow(n3,2);
+
+    printf("A soma dos quadrados lidos eh: %d\n", soma_quadrados);
+
+    system("pause");
+    return 0;
+}
