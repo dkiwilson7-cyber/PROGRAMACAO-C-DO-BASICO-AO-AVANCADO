@@ -1,0 +1,30 @@
+/*  Faça um programa, no qual receba e some os números inteiros até que a entrada seja 0.  */
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int numero; // armazena numero digitado
+    int soma = 0; // acumuladora
+
+    printf("Digite um numero inteiro: \n");
+    scanf("%d", &numero);
+
+    do
+    {
+        soma += numero;
+
+        printf("Digite outro numero (0 para terminar).\n");
+        scanf("%d", &numero);
+    }
+    while(numero != 0);
+
+    printf("A soma dos numeros diferentes de zero eh: %d\n", soma);
+
+    system("pause");
+    return 0;
+}
+
