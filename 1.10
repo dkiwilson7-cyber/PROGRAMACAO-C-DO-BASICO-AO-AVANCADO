@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int opcao;
+
+    printf("------OPCOES DOS DIAS DA SEMANA------\n\n");
+    printf("1 - Domingo.\n");
+    printf("2 - Segunda.\n");
+    printf("3 - Terca.\n");
+    printf("4 - Quarta.\n");
+    printf("5 - Quinta.\n");
+    printf("6 - Sexta.\n");
+    printf("7 - Sabado.\n");
+    printf("-------------------------------------\n\n");
+
+    printf("Digite a opcao correspondente ao dia da semana (1-7)\n");
+    scanf("%d", &opcao);
+
+    switch(opcao)
+    {
+        case 1:
+            printf("Voce escolheu DOMINGO.\n");
+            break;
+        case 2:
+            printf("Voce escolheu SEGUNDA.\n");
+            break;
+        case 3:
+            printf("Voce escolheu TERCA.\n");
+            break;
+        case 4:
+            printf("Voce escolheu QUARTA.\n");
+            break;
+        case 5:
+            printf("Voce escolheu QUINTA.\n");
+            break;
+        case 6:
+            printf("Voce escolheu SEXTA.\n");
+            break;
+        case 7:
+            printf("Voce escolheu SABADO.\n");
+            break;
+        default:
+            printf("Valor invalido!");
+            break;
+    }
+
+    system("pause");
+    return 0;
+}
